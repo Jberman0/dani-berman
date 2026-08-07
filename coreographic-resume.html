@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Resume | Dani Berman</title>
+  <title>Coreographic Resume | Dani Berman</title>
   <link rel="stylesheet" href="style.css?v=7" />
   <style>
     /* Ensure proper height for resume display */
@@ -70,9 +70,9 @@
 
   <main class="resume-page-fullscreen">
     <div class="resume-header-compact">
-      <h2>Performance Resume</h2>
+      <h2>Coreographic Resume</h2>
       <div class="download-buttons">
-        <a href="Dani Berman Perf Resume.pdf" download="Dani Berman Performance Resume.pdf" class="btn btn-primary btn-small">Download Resume</a>
+        <a href="Dani Berman Cor Resume.pdf" download="Dani Berman Coreographic Resume.pdf" class="btn btn-primary btn-small">Download Resume</a>
         <a href="dani-berman-headshot.jpeg" download="dani-berman-headshot.jpeg" class="btn btn-primary btn-small">Download Headshot</a>
       </div>
     </div>
@@ -80,7 +80,7 @@
     <div class="resume-split-container">
       <div class="resume-split-left">
         <div class="resume-image-container">
-          <img src="dani-berman-perf-resume.jpg" alt="Dani Berman Performance Resume" />
+          <img src="dani-berman-cor-resume.jpg" alt="Dani Berman Coreographic Resume" />
         </div>
       </div>
 
@@ -135,17 +135,14 @@
         const email = footerForm.elements.email.value;
         const message = footerForm.elements.message.value;
 
-        // Create mailto link
         const subject = encodeURIComponent(`Message from ${name}`);
         const body = encodeURIComponent(`${message}\n\n${name}`);
         const mailtoLink = `mailto:dani_berman@outlook.com?subject=${subject}&body=${body}`;
 
-        // Open mail client
         window.location.href = mailtoLink;
       });
     }
 
-    // Footer Typing Effect
     const typedTextSpan = document.querySelector('.typed-text-footer');
     const cursor = document.querySelector('.cursor-footer');
 
